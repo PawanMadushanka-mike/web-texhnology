@@ -1,0 +1,5 @@
+h2{color:darkblue;font-style: italic;}
+ul li strong{color:purple;}
+h2 + a {color:green;}
+h1 > strong {color: purple;}
+h2[align="center"] {border: dotted;}

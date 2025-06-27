@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>CSS Selectors</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+     p{color:blue;} <!--internal-->
+	 body{
+	    font-family:Times !important;
+		font-family:Verdana;
+		}
+	.note {color: green !important; }
+	#override {color:red; }
+	a {
+	    display:block;
+	}
+	h1,h2,h3{
+	    display:inline;
+		}
+    p.pixel{font-size:20px;}
+	p.emsty{fibt-size:1.5cm;}
+	p.percentsty{font-size:150%;}
+	ul{list-style:square;}
+	ol{list-style:lower-alpha;}
+	<!--ul li{list-style-position:inside;list-style-type:url("black-black-ball.gif");}-->
+	ul li{list-style-position:inside;}
+	
+	.box{
+	   width:200px;
+	   padding:10px;
+	   border:5px solid black;
+	   margin: 20px;
+	   background-color:lightgray;
+	   }
+	   
+	   a:hover{color:red;} /*pseudo=-class */
+	   p::first-line{font-wieght:bold;} /*pseudo-element */
+	   
+	   .relative{position:relative;top:20px;left:20px;background:yellow;}
+	   .absolute{position:absolute;top:50px;left:100px;background:pink;}
+	   .fixed{position:fixed;bottom:10px;right:10px;background:lightblue;}
+   </style>
+</head>
+<body>
+   <div class="relative">Relative</div>
+   <div class="absolute">Absolute</div>
+   <div class="fixed">Fixed</div>
+   <br>
+   <a href="#">Hover over me</a>
+   <p>This is a paragraph with a bold first line.</p>
+   
+   <div class="box">Box Model Example</div>
+   <ul>
+   Fruits1
+   <li>Apple</li>
+   <li>Banana</li>
+   </ul>
+   <ol>
+    <li>One</li>
+	<li>Two</li>
+   </ol>
+   <a href="link1.html">Link 1</a>
+   <a href="link2.html">Link 2</a>
+   <a href="link3.html">Link 3</a><br>
+   
+   <h1>Heading 1</h1>
+   <h2>Heading 1</h2>
+   <h3>Heading 1</h3>
+   
+   <p class="note" id="override">This uses !important to stay blue.</p>
+   <p>This is a paragraph</p>
+   <p class="highlight">This is a higligthed paragraph.</p>
+   <p id="special">This is a special paragraph.</p>
+   <h2 align="center">Visit Stannford!</h2>
+   <h2>Visit stanford!</h2>
+   <h1>
+    <strong>Test contextual Selector</strong>
+   </h1>
+   <h1>
+    <p>Explain the Direct child selectors
+	<strong>Test contextual Selector</strong></p>
+   </h1>
+   <a href="http://www.stanford.edu">Click here</a>.This link would not: <h2>Visit
+   staanford!
+   <a href="http://www.stanford.edu">Click here</a></h2>
+   <ul>
+      <li>
+	    <a href="http://www.stanford.edu"></a>
+	    <strong>  blah  </strong></a>
+	  
+	  </li>
+   </ul>
+   <p style="color:orange;font-style:italic">Hello to all!</p>  <!--inline-->
+   
+</body>
+
+</html>
